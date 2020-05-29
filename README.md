@@ -1,1 +1,3 @@
-# sentinel-azure
+# Sentinel Policies
+
+Sentinel Policies for Azure (Third Generation)

@@ -1,13 +1,13 @@
 module "tfplan-functions" {
-    source = "../common-functions/tfplan-functions.sentinel"
+    source = "./common-functions/tfplan-functions.sentinel"
 }
 
 module "tfstate-functions" {
-    source = "../common-functions/tfstate-functions.sentinel"
+    source = "./common-functions/tfstate-functions.sentinel"
 }
 
 module "tfconfig-functions" {
-    source = "../common-functions/tfconfig-functions.sentinel"
+    source = "./common-functions/tfconfig-functions.sentinel"
 }
 
 policy "enforce-mandatory-tags" {
@@ -23,5 +23,5 @@ policy "restrict-publishers-of-current-vms" {
 }
 
 policy "restrict-vm-size" {
-    enforcement_level = "advisory"
+    enforcement_level = "soft-mandatory"
 }
